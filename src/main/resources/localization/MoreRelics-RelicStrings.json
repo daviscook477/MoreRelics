@@ -1,0 +1,37 @@
+{
+    "TwinDoll": {
+        "NAME": "Twin Dolls",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "On pickup, duplicate a card in your deck."
+        ]
+    },
+    "DoorKnob": {
+        "NAME": "Door Knob",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Future acts have more densely connected maps."
+        ]
+    },
+    "TrainingArmor": {
+        "NAME": "Training Armor",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "The first attack you receive each combat is negated."
+        ]
+    },
+    "UtilityBelt": {
+        "NAME": "Utility Belt",
+        "FLAVOR": "cogumush",
+        "DESCRIPTIONS": [
+            "#yInnate cards no longer count against your initial draw amount."
+        ]
+    },
+    "RustyGear": {
+        "NAME": "Rusty Gear",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Gain 1 #yArtifact at the start of each combat."
+        ]
+    }
+}
