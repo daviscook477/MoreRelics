@@ -31,6 +31,9 @@ MoreRelics adds 5 new relics to the game.
 #### v1.0.0 ####
 * Initial release
 
+#### v1.0.1 ####
+* Rewrite Training Armor to work as intended
+
 ## Contributors ##
 * t-larson - Mod development
 * StreptoFire - Relic design

@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 public class MoreRelics implements PostInitializeSubscriber {
     private static final String MODNAME = "More Relics";
     private static final String AUTHOR = "t-larson";
-    private static final String DESCRIPTION = "v1.0.0 NL Adds 5 new relics.";
+    private static final String DESCRIPTION = "v1.0.1 NL Adds 5 new relics.";
     
     public MoreRelics() {
         BaseMod.subscribeToPostInitialize(this);
