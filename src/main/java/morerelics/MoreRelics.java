@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 public class MoreRelics implements PostInitializeSubscriber {
     private static final String MODNAME = "More Relics";
     private static final String AUTHOR = "t-larson";
-    private static final String DESCRIPTION = "v1.0.1 NL Adds 5 new relics.";
+    private static final String DESCRIPTION = "v1.0.2 NL Adds 6 new relics.";
     
     public MoreRelics() {
         BaseMod.subscribeToPostInitialize(this);
@@ -39,5 +39,7 @@ public class MoreRelics implements PostInitializeSubscriber {
         RelicLibrary.add(new TrainingArmor());
         RelicLibrary.add(new UtilityBelt());
         RelicLibrary.add(new RustyGear());
+        RelicLibrary.add(new MagicKindling());
+        RelicLibrary.add(new NemesisMask());
     }
 }

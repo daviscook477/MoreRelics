@@ -1,10 +1,12 @@
 # MoreRelics #
-MoreRelics adds 5 new relics to the game.
+MoreRelics adds 7 new relics to the game.
+
+There is currently no art for any of the relics. If anyone would like to contribute some it would be appreciated.
 
 ## Requirements ##
 #### General Use ####
 * ModTheSpire 1.1.1+ (https://github.com/t-larson/ModTheSpire/releases)
-* BaseMod 1.2.1+ (https://github.com/t-larson/BaseMod/releases)
+* BaseMod 1.2.3+ (https://github.com/t-larson/BaseMod/releases)
 * Java 8+
 
 #### Development ####
@@ -27,6 +29,12 @@ MoreRelics adds 5 new relics to the game.
 * Rusty Gear (StreptoFire) - Gain 1 Artifact at the start of each combat.
 * Training Armor (StreptoFire) - The first attack you receive each combat is negated.
 
+### Rare ###
+
+### Boss ###
+* Magic Kindling (fiiiiilth) - You can perform two actions at each campfire.
+* Nemesis Mask (StreptoFire) - Become Intangible on odd turns. Become Vulnerable on even turns.
+
 ## Changelog ##
 #### v1.0.0 ####
 * Initial release
@@ -34,7 +42,12 @@ MoreRelics adds 5 new relics to the game.
 #### v1.0.1 ####
 * Rewrite Training Armor to work as intended
 
+#### v1.0.2 ####
+* Add Magic Kindling
+* Add Nemesis Mask
+
 ## Contributors ##
 * t-larson - Mod development
 * StreptoFire - Relic design
 * cogumush - Relic design
+* fiiiiilth - Relic design

@@ -33,5 +33,19 @@
         "DESCRIPTIONS": [
             "Gain 1 #yArtifact at the start of each combat."
         ]
+    },
+    "MagicKindling": {
+        "NAME": "Magic Kindling",
+        "FLAVOR": "fiiiiilth",
+        "DESCRIPTIONS": [
+            "You can perform two actions at each campfire."
+        ]
+    },
+    "NemesisMask": {
+        "NAME": "Nemesis Mask",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Become #yIntangible on odd turns. NL Become #yVulnerable on even turns."
+        ]
     }
 }
