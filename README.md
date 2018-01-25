@@ -3,6 +3,8 @@ MoreRelics adds 7 new relics to the game.
 
 There is currently no art for any of the relics. If anyone would like to contribute some it would be appreciated.
 
+Trello: https://trello.com/b/UqKOom9E/morerelics
+
 ## Requirements ##
 #### General Use ####
 * ModTheSpire 1.1.1+ (https://github.com/t-larson/ModTheSpire/releases)
@@ -12,12 +14,6 @@ There is currently no art for any of the relics. If anyone would like to contrib
 #### Development ####
 * Java 8+
 * Maven
-
-## Building ##
-1. Run `mvn package`
-
-## Installation ##
-1. Copy `target/MoreRelics.jar` to your ModTheSpire mods directory.
 
 ## Relics ##
 ### Common ###
