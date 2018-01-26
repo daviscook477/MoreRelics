@@ -42,6 +42,9 @@ Trello: https://trello.com/b/UqKOom9E/morerelics
 * Add Magic Kindling
 * Add Nemesis Mask
 
+#### v1.0.3 ####
+* Fix another bug with Training Armor
+
 ## Contributors ##
 * t-larson - Mod development
 * StreptoFire - Relic design
