@@ -34,7 +34,7 @@ public class TrainingArmor extends CustomRelic implements PreMonsterTurnSubscrib
     }
     
     public boolean receivePreMonsterTurn(AbstractMonster m) {
-        if (!used && validIntents.contains(m.intent)) {
+        if (!used && AbstractDungeon.player.hasRelic("TrainingArmor") && validIntents.contains(m.intent)) {
             used = true;
             flash();
             AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
