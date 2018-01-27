@@ -19,9 +19,10 @@ public class MagicKindling extends CustomRelic implements PostCampfireSubscriber
         
         BaseMod.subscribeToPostCampfire(this);
     }
-    
+
+    @Override
     public boolean receivePostCampfire() {
-        if (!used && AbstractDungeon.player.hasRelic("MagicKindling")) {
+        if (!used && AbstractDungeon.player.relics.indexOf(this) != -1) {
             used = true;
             flash();
             return false;

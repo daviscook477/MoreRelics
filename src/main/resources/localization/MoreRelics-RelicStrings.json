@@ -38,7 +38,7 @@
         "NAME": "Magic Kindling",
         "FLAVOR": "fiiiiilth",
         "DESCRIPTIONS": [
-            "You can perform two actions at each campfire."
+            "You may perform two actions at each campfire."
         ]
     },
     "NemesisMask": {
@@ -46,6 +46,35 @@
         "FLAVOR": "StreptoFire",
         "DESCRIPTIONS": [
             "Become #yIntangible on odd turns. NL Become #yVulnerable on even turns."
+        ]
+    },
+    "MagicPiggyBank": {
+        "NAME": "Magic Piggy Bank",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Upon pickup, lose all #yGold. NL Gain twice the lost #yGold upon entering the next act. NL Stored #yGold: "
+        ]
+    },
+    "GreedyCoin": {
+        "NAME": "Greedy Coin",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Gain 250 #yGold each time you encounter an Elite while having less than 30% #rHP. NL Current #rHP: ",
+            "%"
+        ]
+    },
+    "ExtremelyHeavyHammer": {
+        "NAME": "Extremely Heavy Hammer",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "Gain 4 #yStrength each time you end a turn without playing any cards."
+        ]
+    },
+    "BrainOfInsanity": {
+        "NAME": "Brain Of Insanity",
+        "FLAVOR": "StreptoFire",
+        "DESCRIPTIONS": [
+            "You may obtain both #rRed and #gGreen cards."
         ]
     }
 }

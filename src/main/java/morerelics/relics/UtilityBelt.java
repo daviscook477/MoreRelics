@@ -21,9 +21,10 @@ public class UtilityBelt extends CustomRelic implements PostDrawSubscriber {
         super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.COMMON, LandingSound.CLINK);
         BaseMod.subscribeToPostDraw(this);
     } 
-    
+
+    @Override
     public void receivePostDraw(AbstractCard c) {
-        if (firstTurn) {
+        if (firstTurn && AbstractDungeon.player.relics.indexOf(this) != -1) {
             if (c.isInnate) {
                 flash();
                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
