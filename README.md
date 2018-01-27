@@ -1,5 +1,5 @@
 # MoreRelics #
-MoreRelics adds 7 new relics to the game.
+MoreRelics adds 11 new relics to the game.
 
 There is currently no art for any of the relics. If anyone would like to contribute some it would be appreciated.
 
