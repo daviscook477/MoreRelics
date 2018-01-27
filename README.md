@@ -44,6 +44,7 @@ Trello: https://trello.com/b/UqKOom9E/morerelics
 
 #### v1.0.3 ####
 * Fix another bug with Training Armor
+* Fix a bug with Magic Kindling
 
 ## Contributors ##
 * t-larson - Mod development

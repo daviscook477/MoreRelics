@@ -5,6 +5,7 @@ import basemod.interfaces.PostCampfireSubscriber;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class MagicKindling extends CustomRelic implements PostCampfireSubscriber {
@@ -20,7 +21,7 @@ public class MagicKindling extends CustomRelic implements PostCampfireSubscriber
     }
     
     public boolean receivePostCampfire() {
-        if (!used) {
+        if (!used && AbstractDungeon.player.hasRelic("MagicKindling")) {
             used = true;
             flash();
             return false;
