@@ -3,7 +3,7 @@
 
     <groupId>morerelics</groupId>
     <artifactId>morerelics</artifactId>
-    <version>v1.1.0</version>
+    <version>v1.1.2</version>
     <packaging>jar</packaging>
 
     <name>MoreRelics</name>

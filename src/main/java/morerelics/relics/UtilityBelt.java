@@ -26,7 +26,7 @@ public class UtilityBelt extends CustomRelic implements PostDrawSubscriber {
     @Override
     public void receivePostDraw(AbstractCard c) {
         if (firstTurn && AbstractDungeon.player.relics.indexOf(this) != -1) {
-            if (c.isInnate) {
+            if (c.isInnate || c.inBottleFlame || c.inBottleLightning || c.inBottleTornado) {
                 flash();
                 AbstractDungeon.actionManager.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 AbstractDungeon.actionManager.addToTop(new DrawCardAction(AbstractDungeon.player, 1));
