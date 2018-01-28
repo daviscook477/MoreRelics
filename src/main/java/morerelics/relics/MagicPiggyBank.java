@@ -16,11 +16,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class MagicPiggyBank extends CustomRelic implements StartActSubscriber, StartGameSubscriber {
     public static final String ID = "MagicPiggyBank";
     private static final String IMG = "img/relics/MagicPiggyBank.png";
+    private static final String OUTLINE = "img/relics/outline/MagicPiggyBank.png";
 
     public int storedGold = 0;
 
     public MagicPiggyBank() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.UNCOMMON, LandingSound.MAGICAL);
 
         BaseMod.subscribeToStartAct(this);
         BaseMod.subscribeToStartGame(this);

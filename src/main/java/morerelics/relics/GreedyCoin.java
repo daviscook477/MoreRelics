@@ -14,9 +14,10 @@ import com.megacrit.cardcrawl.rooms.MonsterRoomElite;
 public class GreedyCoin extends CustomRelic {
     public static final String ID = "GreedyCoin";
     private static final String IMG = "img/relics/GreedyCoin.png";
+    private static final String OUTLINE = "img/relics/outline/GreedyCoin.png";
 
     public GreedyCoin() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.RARE, LandingSound.CLINK);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.RARE, LandingSound.CLINK);
     }
 
     @Override

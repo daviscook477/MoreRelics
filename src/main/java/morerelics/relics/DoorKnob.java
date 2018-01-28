@@ -11,9 +11,10 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class DoorKnob extends CustomRelic implements StartGameSubscriber {
     public static final String ID = "DoorKnob";
     private static final String IMG = "img/relics/DoorKnob.png";
-    
+    private static final String OUTLINE = "img/relics/outline/DoorKnob.png";
+
     public DoorKnob() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.COMMON, LandingSound.CLINK);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.COMMON, LandingSound.CLINK);
         BaseMod.subscribeToStartGame(this);
     }
 

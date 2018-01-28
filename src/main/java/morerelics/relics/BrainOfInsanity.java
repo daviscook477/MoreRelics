@@ -18,9 +18,10 @@ import java.util.Map;
 public class BrainOfInsanity extends CustomRelic implements PostDungeonInitializeSubscriber {
     public static final String ID = "BrainOfInsanity";
     private static final String IMG = "img/relics/BrainOfInsanity.png";
+    private static final String OUTLINE = "img/relics/outline/BrainOfInsanity.png";
 
     public BrainOfInsanity() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.RARE, LandingSound.MAGICAL);
 
         BaseMod.subscribeToPostDungeonInitialize(this);
     }

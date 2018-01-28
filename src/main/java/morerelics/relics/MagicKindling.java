@@ -11,11 +11,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class MagicKindling extends CustomRelic implements PostCampfireSubscriber {
     public static final String ID = "MagicKindling";
     private static final String IMG = "img/relics/MagicKindling.png";
-    
+    private static final String OUTLINE = "img/relics/outline/MagicKindling.png";
+
     private boolean used = false;
     
     public MagicKindling() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.BOSS, LandingSound.MAGICAL);
         
         BaseMod.subscribeToPostCampfire(this);
     }

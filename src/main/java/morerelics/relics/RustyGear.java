@@ -12,11 +12,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class RustyGear extends CustomRelic {
     public static final String ID = "RustyGear";
     private static final String IMG = "img/relics/RustyGear.png";
-    
+    private static final String OUTLINE = "img/relics/outline/RustyGear.png";
+
     private boolean cardSelected = true;
     
     public RustyGear() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.UNCOMMON, LandingSound.CLINK);
     }
  
     @Override

@@ -13,11 +13,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class NemesisMask extends CustomRelic {
     public static final String ID = "NemesisMask";
     private static final String IMG = "img/relics/NemesisMask.png";
-    
+    private static final String OUTLINE = "img/relics/outline/NemesisMask.png";
+
     private int turn = -1;
     
     public NemesisMask() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.BOSS, LandingSound.MAGICAL);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.BOSS, LandingSound.MAGICAL);
     }
     
     @Override

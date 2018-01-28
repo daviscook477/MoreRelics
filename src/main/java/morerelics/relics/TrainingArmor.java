@@ -18,12 +18,13 @@ import java.util.ArrayList;
 public class TrainingArmor extends CustomRelic implements PreMonsterTurnSubscriber {
     public static final String ID = "TrainingArmor";
     private static final String IMG = "img/relics/TrainingArmor.png";
-    
+    private static final String OUTLINE = "img/relics/outline/TrainingArmor.png";
+
     private boolean used = false;
     private ArrayList<Intent> validIntents = new ArrayList<>();
     
     public TrainingArmor() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.UNCOMMON, LandingSound.SOLID);
 
         validIntents.add(Intent.ATTACK);
         validIntents.add(Intent.ATTACK_BUFF);

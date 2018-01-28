@@ -12,11 +12,12 @@ import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect;
 public class TwinDoll extends CustomRelic {
     public static final String ID = "TwinDoll";
     private static final String IMG = "img/relics/TwinDoll.png";
-    
+    private static final String OUTLINE = "img/relics/outline/TwinDoll.png";
+
     private boolean cardSelected = true;
     
     public TwinDoll() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.COMMON, LandingSound.FLAT);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.COMMON, LandingSound.FLAT);
     }
     
     @Override

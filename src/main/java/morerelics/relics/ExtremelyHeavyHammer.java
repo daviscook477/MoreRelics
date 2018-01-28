@@ -17,11 +17,12 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 public class ExtremelyHeavyHammer extends CustomRelic {
     public static final String ID = "ExtremelyHeavyHammer";
     private static final String IMG = "img/relics/ExtremelyHeavyHammer.png";
+    private static final String OUTLINE = "img/relics/outline/ExtremelyHeavyHammer.png";
 
     private boolean activate;
 
     public ExtremelyHeavyHammer() {
-        super(ID, new Texture(Gdx.files.internal(IMG)), RelicTier.RARE, LandingSound.HEAVY);
+        super(ID, new Texture(Gdx.files.internal(IMG)), new Texture(Gdx.files.internal(OUTLINE)), RelicTier.RARE, LandingSound.HEAVY);
     }
 
     @Override
