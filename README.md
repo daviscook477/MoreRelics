@@ -61,6 +61,13 @@ Trello: https://trello.com/b/UqKOom9E/morerelics
 #### v1.1.2 ####
 * Buff Utility Belt: Now also works on bottled cards
 
+#### v1.1.3 ####
+* Further tweaks to how Training Armor works
+
+#### v1.2.0 ####
+* Update to work with newer versions of BaseMod
+* Switch to SpireInitializer initialization
+
 ## Contributors ##
 * t-larson - Mod development
 * StreptoFire - Relic design

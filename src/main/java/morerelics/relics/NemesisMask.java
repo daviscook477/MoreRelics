@@ -39,7 +39,7 @@ public class NemesisMask extends CustomRelic {
         
         turn++;
     }
-    
+
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];

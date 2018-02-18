@@ -5,14 +5,17 @@ import basemod.ModPanel;
 import basemod.interfaces.PostInitializeSubscriber;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
+import com.megacrit.cardcrawl.localization.RelicStrings;
 import morerelics.relics.*;
 import java.nio.charset.StandardCharsets;
 
+@SpireInitializer
 public class MoreRelics implements PostInitializeSubscriber {
     private static final String MODNAME = "More Relics";
-    private static final String AUTHOR = "t-larson";
-    private static final String DESCRIPTION = "v1.1.0 NL Adds 11 new relics.";
+    private static final String AUTHOR = "t-larson, StreptoFire, Velken, cogumush, fiiiiilth";
+    private static final String DESCRIPTION = "v1.2.0 NL Adds 11 new relics.";
     
     public MoreRelics() {
         BaseMod.subscribeToPostInitialize(this);
@@ -31,7 +34,7 @@ public class MoreRelics implements PostInitializeSubscriber {
         
         // RelicStrings
         String jsonString = Gdx.files.internal("localization/MoreRelics-RelicStrings.json").readString(String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomRelicStrings(jsonString);
+        BaseMod.loadCustomStrings(RelicStrings.class, jsonString);
         
         // Add relics
         RelicLibrary.add(new TwinDoll());
