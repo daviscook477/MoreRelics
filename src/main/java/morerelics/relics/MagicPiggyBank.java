@@ -1,9 +1,13 @@
 package morerelics.relics;
 
+import java.util.Properties;
+import java.io.IOException;
+
 import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import basemod.interfaces.StartGameSubscriber;
 import basemod.interfaces.StartActSubscriber;
+import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -34,9 +38,14 @@ public class MagicPiggyBank extends CustomRelic implements StartActSubscriber, S
             storedGold = 0;
             flash();
 
-            Prefs modPrefs = SaveHelper.getPrefs("MoreRelicsSave");
-            modPrefs.putInteger("PiggyBank", 0);
-            modPrefs.flush();
+            try {
+                SpireConfig config = new SpireConfig("MoreRelics", "magic_piggy_bank_cofig");
+                config.setInt("amount", 0);
+                config.save();
+            } catch  (IOException e) {
+                // eat it
+            }
+            
 
             description = getUpdatedDescription();
             tips.clear();
@@ -48,8 +57,16 @@ public class MagicPiggyBank extends CustomRelic implements StartActSubscriber, S
     @Override
     public void receiveStartGame() {
         if (AbstractDungeon.player.relics.indexOf(this) != -1) {
-            Prefs modPrefs = SaveHelper.getPrefs("MoreRelicsSave");
-            storedGold = modPrefs.getInteger("PiggyBank", 0);
+          
+            try {
+                Properties defaults = new Properties();
+                defaults.setProperty("amount", "0");
+                SpireConfig config = new SpireConfig("MoreRelics", "magic_piggy_bank_cofig", defaults);
+                storedGold = config.getInt("amount");
+            } catch (IOException e) {
+                storedGold = 0;
+            }
+            
 
             description = getUpdatedDescription();
             tips.clear();
@@ -64,9 +81,14 @@ public class MagicPiggyBank extends CustomRelic implements StartActSubscriber, S
         AbstractDungeon.player.loseGold(AbstractDungeon.player.gold);
         flash();
 
-        Prefs modPrefs = SaveHelper.getPrefs("MoreRelicsSave");
-        modPrefs.putInteger("PiggyBank", storedGold);
-        modPrefs.flush();
+        try {
+            SpireConfig config = new SpireConfig("MoreRelics", "magic_piggy_bank_cofig");
+            config.setInt("amount", storedGold);
+            config.save();
+        } catch (IOException e) {
+            // eat it
+        }
+        
 
         description = getUpdatedDescription();
         tips.clear();

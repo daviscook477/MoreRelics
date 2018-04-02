@@ -1,0 +1,8 @@
+{
+    "modid": "morerelics",
+    "name": "More Relics",
+    "author_list": ["t-larson", "StreptoFire", "Velken", "cogumush", "fiiiiilth"],
+    "description": "Adds 11 new relics to the game.",
+    "version": "1.2.1",
+    "mts_version": "2.6.0"
+}

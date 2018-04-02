@@ -22,12 +22,14 @@
             <artifactId>basemod</artifactId>
             <version>1.6.4</version>
             <scope>system</scope>
-            <systemPath>${basedir}/../_ModTheSpire/mods/BaseMod.jar</systemPath>
+            <systemPath>${basedir}/../lib/BaseMod.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>com.evacipated.cardcrawl</groupId>
             <artifactId>ModTheSpire</artifactId>
             <version>2.2.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../lib/ModTheSpire.jar</systemPath>
         </dependency>
     </dependencies>
 
